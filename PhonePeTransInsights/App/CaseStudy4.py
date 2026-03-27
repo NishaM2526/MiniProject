@@ -100,3 +100,38 @@ def get_case_study_content4():
                                             }
                     )
     st.plotly_chart(fig)
+
+    st.subheader("Top Performed States Yearly")
+    query5 = """select year as Year,state as State,transaction_value as Transaction_Value from (
+                    select year,state,sum(transaction_amount) as transaction_value,
+                    RANK() over (partition by year order by sum(transaction_amount) desc) as rnk
+                    from top_transaction_district
+                    group by state,year)t where rnk=1;"""
+    df_result = pd.read_sql(query5, connection)
+    row_colors = ['#f9f9f9', '#e6f2ff'] * (len(df_result)//2 + 1)
+
+    fig = go.Figure(data=[go.Table(    
+                                    # Header styling
+                                    header=dict(
+                                        values=list(df_result.columns),
+                                        fill_color='#1f4e79',
+                                        font=dict(color='white', size=14, family='Arial'),
+                                        align='center',
+                                        height=35
+                                    ),
+    
+                                    # Cell styling
+                                    cells=dict(
+                                        values=[df_result[col] for col in df_result.columns],
+                                        fill_color=[row_colors],
+                                        font=dict(color='black', size=18, family='Arial'),
+                                        align=['center', 'left', 'right'],  # column-wise alignment
+                                        height=30
+                                    )
+                                )])     
+
+    fig.update_layout(
+        margin=dict(l=10, r=10, t=40, b=10)
+    )
+    
+    st.plotly_chart(fig)
