@@ -9,6 +9,7 @@ from CaseStudy1 import get_case_study_content
 from CaseStudy2 import get_case_study_content2
 from CaseStudy3 import get_case_study_content3
 from CaseStudy4 import get_case_study_content4
+from CaseStudy5 import get_case_study_content5
 
 # SQL connection
 connection = mysql.connector.connect(
@@ -45,7 +46,9 @@ elif navigation_bar == "Analysis":
     elif casestudy == "Insurance Penetration and Growth Potential Analysis":
         get_case_study_content3()   
     elif casestudy == "Transaction Analysis Across States and Districts Scenario":  
-        get_case_study_content4()          
+        get_case_study_content4()  
+    elif casestudy == "User Registration Analysis":
+        get_case_study_content5()        
 
 cursor.close()
 connection.close()
