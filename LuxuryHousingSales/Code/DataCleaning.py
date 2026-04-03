@@ -1,5 +1,6 @@
 import pandas as pd
 import os
+from sklearn.preprocessing import LabelEncoder
 
 base_dir = os.path.dirname(os.path.join(os.path.dirname(__file__), os.pardir, os.pardir))
 file_path = os.path.join(base_dir, "Data", "Luxury_Housing_Bangalore.csv")
@@ -15,9 +16,13 @@ def data_preprocessing():
     df_copy['Ticket_Price_Cr']=df_copy['Ticket_Price_Cr'].astype(float)
 
     # Normalize text fields
+    encoder = LabelEncoder()
     df_copy['Configuration']=df_copy['Configuration'].str.upper()
+    df_copy['Micro_Market'] = df_copy['Micro_Market'].str.strip().str.lower()
     df_copy['Micro_Market'] = df_copy['Micro_Market'].str.strip().str.title()
     df_copy['NRI_Buyer'] = df_copy['NRI_Buyer'].str.strip().str.title()
+    df_copy['Developer_Name_encoded'] = encoder.fit_transform(df_copy['Developer_Name'])
+    df_copy['Micro_Market_encoded'] = encoder.fit_transform(df_copy['Micro_Market'])
 
     # Handle missing values
     df_copy=df_copy.dropna(subset=['Unit_Size_Sqft','Ticket_Price_Cr','Amenity_Score'], how='all') 

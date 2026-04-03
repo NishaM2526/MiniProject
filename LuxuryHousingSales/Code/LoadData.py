@@ -30,14 +30,16 @@ def sql_statements():
                         NRI_Buyer             varchar(10),        
                         Locality_Infra_Score  float,       
                         Avg_Traffic_Time_Min  int,         
-                        Buyer_Comments        varchar(255),        
+                        Buyer_Comments        varchar(255),   
+                        Developer_Name_encoded  int,
+                        Micro_Market_encoded    int,     
                         Price_per_Sqft        float,        
                         Quarter_Number        int,          
                         Booking_Flag          int
                       )""")
     # insert into database
     df_data = dc.data_preprocessing().values.tolist()
-    query ="insert into luxury_housing_bglr values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
+    query ="insert into luxury_housing_bglr values(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)"
     for i in df_data:
         my_cursor.execute(query, tuple(i))
     database_connection.commit()
