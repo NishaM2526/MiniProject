@@ -54,7 +54,7 @@ python Code/LinearRegressionModel.py
 
 Start the Streamlit app:
 ```bash
-streamlit run env/YoutubeMonetization.py
+streamlit run App/YoutubeMonetization.py
 ```
 
 Open your browser to `http://localhost:8501` and input your video metrics to get predictions.
@@ -71,6 +71,9 @@ df = data_preprocessing()
 
 ```
 ContentMonetization/
+├── App/
+│   ├── YoutubeMonetization.py        # Streamlit web app
+│   └── RevenuePrediction.py          # Revenue prediction logic
 ├── Code/
 │   ├── LinearRegressionModel.py      # Model training script
 │   ├── Preprocess.py                 # Data preprocessing functions
@@ -81,8 +84,6 @@ ContentMonetization/
 │   ├── youtube_ad_revenue_dataset.csv           # Raw dataset
 │   └── Preprocessed_youtube_ad_revenue_dataset.csv  # Processed data
 ├── env/
-│   ├── YoutubeMonetization.py        # Streamlit web app
-│   ├── RevenuePrediction.py          # Prediction logic
 │   └── ...                           # Virtual environment files
 └── README.md                         # This file
 ```
