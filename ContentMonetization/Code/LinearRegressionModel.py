@@ -1,5 +1,6 @@
 
 import os
+from xml.parsers.expat import model
 
 from joblib import Parallel, delayed
 import joblib
@@ -20,7 +21,14 @@ def model_training():
     model = LinearRegression()
     # train the model
     model.fit(x_train, y_train)
+    train_prediction = model.predict(x_train)
+    test_prediction = model.predict(x_test)
 
+    print(f"Linear Regression - Train MSE :: {mean_squared_error(y_train, train_prediction)}")
+    print(f"Linear Regression - Test MSE :: {mean_squared_error(y_test, test_prediction)}")
+
+    print(f"Linear Regression - Train R2 :: {r2_score(y_train, train_prediction)}")
+    print(f"Linear Regression - Test R2 :: {r2_score(y_test, test_prediction)}")
     joblib.dump(model,file_path)
 
 model_training()
