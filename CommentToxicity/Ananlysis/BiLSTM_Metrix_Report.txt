@@ -1,0 +1,344 @@
+Epoch 1 Train Loss:0.7680 Val Loss:0.5243
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9868    0.8299    0.9016     28670
+         1.0     0.3750    0.9017    0.5297      3245
+
+    accuracy                         0.8372     31915
+   macro avg     0.6809    0.8658    0.7156     31915
+weighted avg     0.9246    0.8372    0.8637     31915
+
+Confusion Matrix:
+ [[23793  4877]
+ [  319  2926]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9840    0.8844    0.9315     28670
+         1.0     0.4608    0.8730    0.6032      3245
+
+    accuracy                         0.8832     31915
+   macro avg     0.7224    0.8787    0.7674     31915
+weighted avg     0.9308    0.8832    0.8982     31915
+
+Confusion Matrix:
+ [[25355  3315]
+ [  412  2833]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9806    0.9204    0.9496     28670
+         1.0     0.5441    0.8394    0.6603      3245
+
+    accuracy                         0.9122     31915
+   macro avg     0.7624    0.8799    0.8049     31915
+weighted avg     0.9363    0.9122    0.9202     31915
+
+Confusion Matrix:
+ [[26388  2282]
+ [  521  2724]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9767    0.9430    0.9595     28670
+         1.0     0.6139    0.8012    0.6952      3245
+
+    accuracy                         0.9286     31915
+   macro avg     0.7953    0.8721    0.8274     31915
+weighted avg     0.9398    0.9286    0.9327     31915
+
+Confusion Matrix:
+ [[27035  1635]
+ [  645  2600]]
+Epoch 2 Train Loss:0.4356 Val Loss:0.4413
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9902    0.8760    0.9296     28670
+         1.0     0.4573    0.9233    0.6117      3245
+
+    accuracy                         0.8808     31915
+   macro avg     0.7238    0.8996    0.7706     31915
+weighted avg     0.9360    0.8808    0.8973     31915
+
+Confusion Matrix:
+ [[25115  3555]
+ [  249  2996]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9879    0.9036    0.9439     28670
+         1.0     0.5144    0.9023    0.6553      3245
+
+    accuracy                         0.9035     31915
+   macro avg     0.7512    0.9030    0.7996     31915
+weighted avg     0.9398    0.9035    0.9145     31915
+
+Confusion Matrix:
+ [[25906  2764]
+ [  317  2928]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9859    0.9258    0.9549     28670
+         1.0     0.5739    0.8829    0.6956      3245
+
+    accuracy                         0.9214     31915
+   macro avg     0.7799    0.9044    0.8253     31915
+weighted avg     0.9440    0.9214    0.9285     31915
+
+Confusion Matrix:
+ [[26543  2127]
+ [  380  2865]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9831    0.9442    0.9633     28670
+         1.0     0.6348    0.8567    0.7293      3245
+
+    accuracy                         0.9353     31915
+   macro avg     0.8090    0.9005    0.8463     31915
+weighted avg     0.9477    0.9353    0.9395     31915
+
+Confusion Matrix:
+ [[27071  1599]
+ [  465  2780]]
+Epoch 3 Train Loss:0.3421 Val Loss:0.4231
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9908    0.8798    0.9320     28670
+         1.0     0.4662    0.9276    0.6205      3245
+
+    accuracy                         0.8846     31915
+   macro avg     0.7285    0.9037    0.7762     31915
+weighted avg     0.9374    0.8846    0.9003     31915
+
+Confusion Matrix:
+ [[25223  3447]
+ [  235  3010]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9892    0.9063    0.9459     28670
+         1.0     0.5244    0.9122    0.6659      3245
+
+    accuracy                         0.9069     31915
+   macro avg     0.7568    0.9093    0.8059     31915
+weighted avg     0.9419    0.9069    0.9175     31915
+
+Confusion Matrix:
+ [[25985  2685]
+ [  285  2960]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9873    0.9256    0.9555     28670
+         1.0     0.5766    0.8952    0.7014      3245
+
+    accuracy                         0.9225     31915
+   macro avg     0.7820    0.9104    0.8285     31915
+weighted avg     0.9456    0.9225    0.9296     31915
+
+Confusion Matrix:
+ [[26537  2133]
+ [  340  2905]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9852    0.9412    0.9627     28670
+         1.0     0.6275    0.8749    0.7309      3245
+
+    accuracy                         0.9345     31915
+   macro avg     0.8064    0.9081    0.8468     31915
+weighted avg     0.9488    0.9345    0.9391     31915
+
+Confusion Matrix:
+ [[26985  1685]
+ [  406  2839]]
+Epoch 4 Train Loss:0.2766 Val Loss:0.4217
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9907    0.8941    0.9399     28670
+         1.0     0.4974    0.9260    0.6471      3245
+
+    accuracy                         0.8973     31915
+   macro avg     0.7440    0.9101    0.7935     31915
+weighted avg     0.9406    0.8973    0.9102     31915
+
+Confusion Matrix:
+ [[25633  3037]
+ [  240  3005]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9889    0.9154    0.9507     28670
+         1.0     0.5487    0.9091    0.6844      3245
+
+    accuracy                         0.9147     31915
+   macro avg     0.7688    0.9122    0.8175     31915
+weighted avg     0.9441    0.9147    0.9236     31915
+
+Confusion Matrix:
+ [[26244  2426]
+ [  295  2950]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9872    0.9327    0.9592     28670
+         1.0     0.6003    0.8928    0.7179      3245
+
+    accuracy                         0.9287     31915
+   macro avg     0.7937    0.9127    0.8385     31915
+weighted avg     0.9478    0.9287    0.9346     31915
+
+Confusion Matrix:
+ [[26741  1929]
+ [  348  2897]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9849    0.9460    0.9651     28670
+         1.0     0.6463    0.8721    0.7424      3245
+
+    accuracy                         0.9385     31915
+   macro avg     0.8156    0.9090    0.8537     31915
+weighted avg     0.9505    0.9385    0.9424     31915
+
+Confusion Matrix:
+ [[27121  1549]
+ [  415  2830]]
+Epoch 5 Train Loss:0.2341 Val Loss:0.4650
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9895    0.9000    0.9426     28670
+         1.0     0.5089    0.9156    0.6542      3245
+
+    accuracy                         0.9016     31915
+   macro avg     0.7492    0.9078    0.7984     31915
+weighted avg     0.9406    0.9016    0.9133     31915
+
+Confusion Matrix:
+ [[25803  2867]
+ [  274  2971]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9880    0.9165    0.9509     28670
+         1.0     0.5500    0.9017    0.6832      3245
+
+    accuracy                         0.9150     31915
+   macro avg     0.7690    0.9091    0.8171     31915
+weighted avg     0.9435    0.9150    0.9237     31915
+
+Confusion Matrix:
+ [[26276  2394]
+ [  319  2926]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9864    0.9301    0.9574     28670
+         1.0     0.5894    0.8866    0.7081      3245
+
+    accuracy                         0.9257     31915
+   macro avg     0.7879    0.9083    0.8328     31915
+weighted avg     0.9460    0.9257    0.9321     31915
+
+Confusion Matrix:
+ [[26666  2004]
+ [  368  2877]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9844    0.9420    0.9627     28670
+         1.0     0.6289    0.8681    0.7294      3245
+
+    accuracy                         0.9345     31915
+   macro avg     0.8067    0.9051    0.8461     31915
+weighted avg     0.9483    0.9345    0.9390     31915
+
+Confusion Matrix:
+ [[27008  1662]
+ [  428  2817]]
+Epoch 6 Train Loss:0.2043 Val Loss:0.4737
+
+Threshold = 0.3
+              precision    recall  f1-score   support
+
+         0.0     0.9913    0.8632    0.9228     28670
+         1.0     0.4356    0.9328    0.5939      3245
+
+    accuracy                         0.8703     31915
+   macro avg     0.7134    0.8980    0.7583     31915
+weighted avg     0.9348    0.8703    0.8894     31915
+
+Confusion Matrix:
+ [[24748  3922]
+ [  218  3027]]
+
+Threshold = 0.4
+              precision    recall  f1-score   support
+
+         0.0     0.9898    0.8817    0.9326     28670
+         1.0     0.4681    0.9196    0.6204      3245
+
+    accuracy                         0.8856     31915
+   macro avg     0.7289    0.9006    0.7765     31915
+weighted avg     0.9367    0.8856    0.9009     31915
+
+Confusion Matrix:
+ [[25279  3391]
+ [  261  2984]]
+
+Threshold = 0.5
+              precision    recall  f1-score   support
+
+         0.0     0.9884    0.8983    0.9412     28670
+         1.0     0.5024    0.9072    0.6467      3245
+
+    accuracy                         0.8992     31915
+   macro avg     0.7454    0.9028    0.7939     31915
+weighted avg     0.9390    0.8992    0.9113     31915
+
+Confusion Matrix:
+ [[25754  2916]
+ [  301  2944]]
+
+Threshold = 0.6
+              precision    recall  f1-score   support
+
+         0.0     0.9873    0.9145    0.9495     28670
+         1.0     0.5427    0.8965    0.6761      3245
+
+    accuracy                         0.9127     31915
+   macro avg     0.7650    0.9055    0.8128     31915
+weighted avg     0.9421    0.9127    0.9217     31915
+
+Confusion Matrix:
+ [[26219  2451]
+ [  336  2909]]
+Epoch 7 Train Loss:0.1907 Val Loss:0.5409
+Early stopping
