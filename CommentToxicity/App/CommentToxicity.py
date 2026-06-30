@@ -147,7 +147,7 @@ with tab1:
     if st.button("Predict"):
         label, prob = predict_toxicity(comment)
         st.subheader(f"Prediction: {label}")
-        st.metric("Confidence",f"{prob:.2%}")
+        st.metric("Toxicity Probability",f"{prob:.2%}")
 
 with tab2:
     uploaded_file = st.file_uploader("Upload CSV",type=["csv"])
