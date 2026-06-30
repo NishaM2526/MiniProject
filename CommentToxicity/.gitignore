@@ -1,0 +1,22 @@
+# Virtual environments
+env/
+venv/
+.venv/
+
+# Python
+__pycache__/
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Models (optional)
+*.pth
+*.h5
+*.keras
+
+# Data files (optional)
+*.tar

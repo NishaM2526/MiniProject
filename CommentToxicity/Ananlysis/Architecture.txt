@@ -1,0 +1,18 @@
+Bi directional LSTM Model
+----------------------------
+
+Input Text
+    ↓
+TextVectorization
+    ↓
+Embedding Layer (64)
+    ↓
+BiLSTM (128 hidden units)
+    ↓
+Concatenate Forward + Backward States
+    ↓
+Dense Layer
+    ↓
+Sigmoid (via BCEWithLogitsLoss)
+    ↓
+Toxic / Non-Toxic
